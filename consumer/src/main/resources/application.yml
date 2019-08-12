@@ -1,0 +1,18 @@
+dubbo:
+  application:
+    id: springboot-dubbo-consumer-id
+    name: springboot-dubbo-consumer
+  protocol:
+    id: consumer-protocol-id
+    name: consumer-protocol
+    port: 20880
+  registry:
+    id: consumer-register-id-01
+    address: zookeeper://192.168.20.167:2181
+spring:
+  application:
+    name: consumer
+server:
+  port: 2014
+
+

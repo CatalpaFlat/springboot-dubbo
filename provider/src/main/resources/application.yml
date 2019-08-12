@@ -1,0 +1,23 @@
+dubbo:
+  application:
+    id: springboot-dubbo-provider-id
+    name: springboot-dubbo-provider
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+  registry:
+    id: provider-register-id-01
+    address: zookeeper://192.168.20.167:2181
+    check: false
+  scan:
+    base-packages: cn.catalpafalt.dubbo.provider.service
+  consumer:
+    check: false
+
+spring:
+  application:
+    name: provider
+
+server:
+  port: 2013
